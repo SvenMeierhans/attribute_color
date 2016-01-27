@@ -69,7 +69,7 @@ class Subscriber extends BaseSubscriber
 
         $imageEvent = new GenerateHtmlEvent(
             'pickcolor.gif',
-            $environment->getTranslator('MSC.colorpicker'),
+            $environment->getTranslator()->translate('MSC.colorpicker'),
             'style="vertical-align:top;cursor:pointer" id="moo_' . $property . '"'
         );
 
@@ -81,7 +81,7 @@ class Subscriber extends BaseSubscriber
             new MooRainbow("moo_' . $property . '", {
             id:"ctrl_' . $property . '_0",
             startColor:((cl = $("ctrl_' . $property . '_0").value.hexToRgb(true)) ? cl : [255, 0, 0]),
-            imgPath:"plugins/colorpicker/images/",
+            imgPath: "assets/mootools/colorpicker/' . $GLOBALS['TL_ASSETS']['COLORPICKER'] . '/images/",
             onComplete: function(color) {
                 $("ctrl_' . $property . '_0").value = color.hex.replace("#", "");
             }

@@ -16,7 +16,4 @@
  * @filesource
  */
 
-$GLOBALS['TL_DCA']['tl_metamodel_attribute']['metapalettes']['color extends _simpleattribute_'] = array
-(
-    '-isunique'
-);
+$GLOBALS['TL_DCA']['tl_metamodel_attribute']['metapalettes']['color extends _simpleattribute_'] = array();
