@@ -1,1 +1,3 @@
-<span class="text<?php echo $this->additional_class; ?>"><?php echo $this->raw; ?></span>
+<div class="<?php echo $this->additional_class; ?>"
+     style="height: 50px; width: 50px; display: block; background-color: <?php echo $this->raw['rgba']; ?>;">
+</div>
